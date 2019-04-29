@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    tools:context=".Edit_Note">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="3dp"
+        app:cardBackgroundColor="#C7FADC"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:id="@+id/reloptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <ImageView
+                android:id="@+id/imsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:onClick="saved_notes"
+                android:scaleType="center"
+                android:src="@drawable/sav" />
+
+            <ImageView
+                android:id="@+id/imedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/imsave"
+                android:layout_weight="1"
+                android:onClick="edited_notes"
+                android:scaleType="center"
+                android:src="@drawable/ed" />
+
+
+            <ImageView
+                android:id="@+id/imsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/imdelerte"
+                android:layout_weight="1"
+                android:onClick="formats_notes"
+                android:scaleType="center"
+                android:src="@drawable/typf" />
+            <ImageView
+                android:id="@+id/imdelerte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/imedit"
+                android:layout_weight="1"
+                android:onClick="deleted_notes"
+                android:scaleType="center"
+                android:src="@drawable/det" />
+
+            <ImageView
+                android:id="@+id/imcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/imdelerte"
+                android:layout_weight="1"
+                android:onClick="canceled_notes"
+                android:scaleType="center"
+                android:src="@drawable/canc" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/cardv1">
+         <RelativeLayout
+             android:id="@+id/sctit"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginRight="5dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="3dp"
+             android:layout_marginBottom="5dp">
+
+             <FrameLayout
+                 android:id="@+id/conf"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true" />
+
+             <EditText
+                 android:id="@+id/text_note_title"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="2dp"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:layout_below="@id/conf"
+                 android:backgroundTint="#996F6F6F"
+                 android:backgroundTintMode="src_over"
+                 android:outlineSpotShadowColor="#000"
+                 android:hint="@string/ti"
+                 android:maxLength="100"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:paddingBottom="20dp"
+                 android:textColor="#000000"
+                 android:textColorHint="#AAAAAA"
+                 android:textSize="20sp"
+                 android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/text_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text_note_title"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="@string/su"
+            android:enabled="true"
+            android:focusable="true"
+            android:inputType="textMultiLine"
+            android:backgroundTint="#FDFCFC"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#C2C5BE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+         </RelativeLayout>
+</ScrollView>
+
+    </RelativeLayout>
+

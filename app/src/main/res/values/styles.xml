@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="home" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">#283593</item>
+        <item name="colorAccent">#283593</item>
+    </style>
+    <style name="splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+    <style name="ednote" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">#054E23</item>
+        <item name="colorAccent">#77C261</item>
+    </style>
+</resources>

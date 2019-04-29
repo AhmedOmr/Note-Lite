@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A863D"
+    tools:context=".HomeActivity">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Rv"
+            android:background="#0A863D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="1dp"
+            android:layout_margin=".5dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="add_Notes"
+            android:src="@drawable/addnotes"
+            app:maxImageSize="30dp"
+            app:fabSize="normal"
+            android:backgroundTint="#FFFFFF"
+            app:backgroundTint="#FFFFFF"
+            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp" />
+
+</RelativeLayout>

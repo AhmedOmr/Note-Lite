@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardpr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="15dp">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textpr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="Priority:"
+                android:textColor="#1a0101"
+                android:layout_alignParentLeft="true"
+                android:textDirection="anyRtl"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textpr"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/Rneg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Neglected"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:backgroundTint="#0EE064"
+                    android:buttonTint="#054E23"/>
+
+                <RadioButton
+                    android:id="@+id/Rlo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Low"
+                    android:textColor="#000"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:backgroundTint="#0EE064"
+                    android:buttonTint="#054E23"/>
+
+                <RadioButton
+                    android:id="@+id/Rme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Medium"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:backgroundTint="#0EE064"
+                    android:buttonTint="#054E23" />
+
+                <RadioButton
+                    android:id="@+id/Rhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  High"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:backgroundTint="#0EE064"
+                    android:buttonTint="#054E23"/>
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ok"
+                android:layout_below="@id/rg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:onClick="dopriorty"/>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>
